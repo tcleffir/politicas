@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAT-RACI-001 — Matriz RACI — Lux Energia</title>
+  <link rel="stylesheet" href="_shared.css">
+  <style>
+    .raci-table { width:100%; border-collapse:collapse; font-size:0.8rem; margin:16px 0 24px; }
+    .raci-table th, .raci-table td { border:1px solid var(--border); padding:8px 10px; text-align:center; }
+    .raci-table th { background:var(--bg-light); font-weight:600; color:var(--primary); }
+    .raci-table td:first-child { text-align:left; font-weight:500; }
+    .r { color:#DC2626; font-weight:700; } .a { color:#EA580C; font-weight:700; }
+    .c { color:#2563EB; font-weight:700; } .i { color:#16A34A; font-weight:700; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="logo"><div class="logo-text"><span>Lux</span> Energia</div></div>
+  <a href="index.html" class="nav-back">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Políticas e Governança
+  </a>
+</nav>
+
+<div class="policy-hero">
+  <div class="container">
+    <div class="policy-breadcrumb">
+      <a href="index.html">Políticas</a> › <span>Governança Corporativa</span> › MAT-RACI-001
+    </div>
+    <h1>Matriz RACI — Responsabilidades Pós-Implementação</h1>
+    <p class="subtitle">Quem é Responsável, Aprovador, Consultado e Informado em cada atividade operacional crítica dos produtos Lux.</p>
+  </div>
+</div>
+
+<div class="policy-meta-bar">
+  <div class="policy-meta-inner">
+    <div class="meta-item"><span class="meta-label">Código</span><span class="meta-value">MAT-RACI-001</span></div>
+    <div class="meta-item"><span class="meta-label">Versão</span><span class="meta-value">1.0</span></div>
+    <div class="meta-item"><span class="meta-label">Última atualização</span><span class="meta-value">Junho de 2026</span></div>
+    <div class="meta-item"><span class="meta-label">Revisão</span><span class="meta-value">Semestral + mudança org.</span></div>
+    <div class="meta-item"><span class="meta-label">Dono</span><span class="meta-value">Sócio-Diretor + DPO</span></div>
+    <div class="meta-item"><span class="meta-label">Referências</span><span class="meta-value">ISO 27001 A.5.2; ITIL 4</span></div>
+  </div>
+</div>
+
+<div class="policy-content">
+
+  <h2>1. Objetivo</h2>
+  <p>Documentar quem é responsável por quê após a entrada em produção dos produtos da Lux — curadoria, troubleshooting, gestão, controle/segurança e privacidade pós-implementação.</p>
+
+  <h2>2. Convenção RACI</h2>
+  <table class="info-table">
+    <tr><th><span class="r">R</span> — Responsible</th><td>Executa a atividade</td></tr>
+    <tr><th><span class="a">A</span> — Accountable</th><td>Responde pelo resultado e aprova. Apenas 1 por atividade.</td></tr>
+    <tr><th><span class="c">C</span> — Consulted</th><td>Consultado antes da decisão (input técnico/contextual)</td></tr>
+    <tr><th><span class="i">I</span> — Informed</th><td>Informado após decisão/execução</td></tr>
+  </table>
+
+  <h2>3. Atores</h2>
+  <table class="info-table">
+    <tr><th>SD</th><td>Sócio-Diretor</td></tr>
+    <tr><th>DPO</th><td>DPO / Encarregado — Arthur Lobo</td></tr>
+    <tr><th>RSI</th><td>Responsável de SI — Arthur Lobo (acumulado)</td></tr>
+    <tr><th>LE</th><td>Líder de Engenharia — Arthur Lobo (acumulado)</td></tr>
+    <tr><th>SUP</th><td>Suplente — Victor Rodrigues</td></tr>
+    <tr><th>DEV</th><td>Equipe de Desenvolvimento</td></tr>
+    <tr><th>CLIENTE</th><td>Cliente Controlador (ex.: Bradesco)</td></tr>
+  </table>
+
+  <h2>4. Operação Contínua</h2>
+  <table class="raci-table">
+    <tr><th>Atividade</th><th>SD</th><th>DPO</th><th>RSI</th><th>LE</th><th>DEV</th><th>CLIENTE</th></tr>
+    <tr><td>Monitoramento de saúde (uptime, latência)</td><td class="i">I</td><td class="i">I</td><td class="c">C</td><td class="a">A</td><td class="r">R</td><td class="i">I</td></tr>
+    <tr><td>Atendimento a chamados / suporte</td><td class="i">I</td><td class="c">C</td><td class="i">I</td><td class="a">A</td><td class="r">R</td><td class="r">R</td></tr>
+    <tr><td>Aplicação de patches/atualizações</td><td class="i">I</td><td class="i">I</td><td class="c">C</td><td class="a">A</td><td class="r">R</td><td class="i">I</td></tr>
+    <tr><td>Deploy de novas features</td><td class="i">I</td><td class="i">I</td><td class="c">C</td><td class="a">A</td><td class="r">R</td><td class="i">I</td></tr>
+    <tr><td>Backup periódico e teste de restore</td><td class="i">I</td><td class="i">I</td><td class="a">A</td><td class="r">R</td><td class="i">I</td><td class="i">I</td></tr>
+  </table>
+
+  <h2>5. Segurança da Informação</h2>
+  <table class="raci-table">
+    <tr><th>Atividade</th><th>SD</th><th>DPO</th><th>RSI</th><th>LE</th><th>DEV</th><th>CLIENTE</th></tr>
+    <tr><td>Monitoramento SIEM (Sentinel)</td><td class="i">I</td><td class="i">I</td><td class="a">A/R</td><td class="c">C</td><td class="i">I</td><td class="i">I</td></tr>
+    <tr><td>Resposta a incidente Crítico</td><td class="a">A</td><td class="r">C/R</td><td class="r">R</td><td class="c">C</td><td class="c">C</td><td class="r">R</td></tr>
+    <tr><td>Gestão de vulnerabilidades</td><td class="i">I</td><td class="i">I</td><td class="a">A/R</td><td class="r">R</td><td class="r">R</td><td class="i">I</td></tr>
+    <tr><td>Pentest periódico</td><td class="a">A</td><td class="i">I</td><td class="a">A</td><td class="c">C</td><td class="i">I</td><td class="i">I</td></tr>
+  </table>
+
+  <h2>6. Privacidade e Dados</h2>
+  <table class="raci-table">
+    <tr><th>Atividade</th><th>SD</th><th>DPO</th><th>RSI</th><th>LE</th><th>DEV</th><th>CLIENTE</th></tr>
+    <tr><td>Atendimento de direitos do titular</td><td class="i">I</td><td class="a">A/R</td><td class="c">C</td><td class="c">C</td><td class="r">R</td><td class="r">R</td></tr>
+    <tr><td>Notificação de incidente à ANPD</td><td class="a">A</td><td class="r">R</td><td class="r">R</td><td class="c">C</td><td class="i">I</td><td class="i">I</td></tr>
+    <tr><td>Atualização do RAT/ROPA</td><td class="i">I</td><td class="a">A/R</td><td class="c">C</td><td class="c">C</td><td class="i">I</td><td class="c">C</td></tr>
+    <tr><td>Execução do Plano de Saída</td><td class="a">A</td><td class="r">R</td><td class="c">C</td><td class="r">R</td><td class="r">R</td><td class="r">R</td></tr>
+  </table>
+
+</div>
+
+<footer class="site-footer">
+  <p><strong>Lux Energia LTDA</strong> — DPO: Arthur Lobo — <a href="mailto:privacidade@luxenergia.com.br">privacidade@luxenergia.com.br</a></p>
+  <p style="margin-top:8px"><a href="index.html">← Voltar às Políticas</a> · <a href="https://www.luxenergia.com.br">luxenergia.com.br</a></p>
+</footer>
+
+</body>
+</html>

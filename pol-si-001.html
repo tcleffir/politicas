@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POL-SI-001 — Política de Segurança da Informação — Lux Energia</title>
+  <link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="logo"><div class="logo-text"><span>Lux</span> Energia</div></div>
+  <a href="index.html" class="nav-back">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Políticas e Governança
+  </a>
+</nav>
+
+<div class="policy-hero">
+  <div class="container">
+    <div class="policy-breadcrumb">
+      <a href="index.html">Políticas</a> › <span>Segurança da Informação</span> › POL-SI-001
+    </div>
+    <h1>Política de Segurança da Informação (PSI)</h1>
+    <p class="subtitle">Documento-mãe do Sistema de Gestão de Segurança da Informação (SGSI) da Lux Energia. Princípios CIA, papéis e regras gerais.</p>
+  </div>
+</div>
+
+<div class="policy-meta-bar">
+  <div class="policy-meta-inner">
+    <div class="meta-item"><span class="meta-label">Código</span><span class="meta-value">POL-SI-001</span></div>
+    <div class="meta-item"><span class="meta-label">Versão</span><span class="meta-value">1.1</span></div>
+    <div class="meta-item"><span class="meta-label">Última atualização</span><span class="meta-value">Junho de 2026</span></div>
+    <div class="meta-item"><span class="meta-label">Revisão</span><span class="meta-value">Anual</span></div>
+    <div class="meta-item"><span class="meta-label">Aprovador</span><span class="meta-value">Sócio-Diretor</span></div>
+    <div class="meta-item"><span class="meta-label">Referências</span><span class="meta-value">ISO/IEC 27001:2022, LGPD, NIST CSF</span></div>
+  </div>
+</div>
+
+<div class="policy-content">
+
+  <h2>1. Objetivo</h2>
+  <p>Estabelecer princípios, papéis e regras gerais que protegem a <strong>confidencialidade, integridade e disponibilidade (CIA)</strong> das informações sob responsabilidade da Lux Energia LTDA — sejam de uso próprio (RH, comercial, financeiro) ou tratadas em nome de clientes (na condição de Operadora).</p>
+  <p>Assegurar conformidade com leis brasileiras (em especial a LGPD) e com requisitos setoriais dos clientes regulados (financeiro, saúde, energia).</p>
+
+  <h2>2. Escopo e Aplicabilidade</h2>
+  <p>A PSI aplica-se a:</p>
+  <ul>
+    <li>Todos os colaboradores (CLT, PJ, estagiários, terceiros, parceiros, fornecedores) com acesso a informação ou ativos da Lux;</li>
+    <li>Todos os ativos de informação — dados, sistemas, código, infraestrutura cloud, endpoints, mídias, documentos, comunicações;</li>
+    <li>Todos os ambientes — produção, homologação, desenvolvimento; on-premises e cloud;</li>
+    <li>Todo o ciclo de vida — projeto, contratação, operação, encerramento;</li>
+    <li>Sub-operadores e fornecedores tecnológicos, conforme cláusulas contratuais.</li>
+  </ul>
+
+  <h2>3. Definições</h2>
+  <table class="info-table">
+    <tr><th>Confidencialidade</th><td>Garantia de que a informação só é acessada por quem tem permissão.</td></tr>
+    <tr><th>Integridade</th><td>Garantia de que a informação não é alterada de forma não autorizada.</td></tr>
+    <tr><th>Disponibilidade</th><td>Garantia de que a informação está acessível quando necessária.</td></tr>
+    <tr><th>Ativo de informação</th><td>Qualquer recurso que armazene, processe ou transmita informação.</td></tr>
+    <tr><th>Risco de SI</th><td>Probabilidade × impacto de evento que comprometa CIA.</td></tr>
+  </table>
+
+  <h2>4. Classificação da Informação</h2>
+  <ul>
+    <li><strong>Pública</strong> — pode ser divulgada sem restrição;</li>
+    <li><strong>Interna</strong> — uso restrito a colaboradores e parceiros autorizados;</li>
+    <li><strong>Confidencial</strong> — acesso restrito a grupos específicos com necessidade de conhecer;</li>
+    <li><strong>Restrita</strong> — acesso nominal, log obrigatório, aprovação prévia do DPO ou Responsável de SI.</li>
+  </ul>
+
+  <h2>5. Princípios de Segurança</h2>
+  <ul>
+    <li><strong>Need-to-know e mínimo privilégio</strong> — acesso apenas ao necessário;</li>
+    <li><strong>Defesa em profundidade</strong> — múltiplas camadas de controle;</li>
+    <li><strong>Privacy by design e security by design</strong> — proteção desde o início;</li>
+    <li><strong>Zero trust</strong> — verificação contínua, sem confiança implícita;</li>
+    <li><strong>Resiliência</strong> — capacidade de detectar, responder e recuperar;</li>
+    <li><strong>Responsabilização</strong> — rastreabilidade de todas as ações relevantes.</li>
+  </ul>
+
+  <h2>6. Controles Técnicos Essenciais</h2>
+  <ul>
+    <li>Autenticação multifator (MFA) obrigatória para todos os sistemas críticos;</li>
+    <li>Criptografia em repouso e em trânsito para dados classificados como Confidencial e Restrito;</li>
+    <li>Gestão de identidade e acesso (IAM) com princípio de mínimo privilégio;</li>
+    <li>Monitoramento contínuo via SIEM (Microsoft Sentinel);</li>
+    <li>Gestão de vulnerabilidades com SLA de correção por criticidade;</li>
+    <li>Backup periódico com testes de restore documentados.</li>
+  </ul>
+
+  <h2>7. Treinamento e Conscientização</h2>
+  <p>Todos os colaboradores passam por treinamento de segurança da informação na admissão e reciclagem anual. Os termos de ciência da PSI são assinados conforme <a href="gov-nda-001.html">GOV-NDA-001</a>.</p>
+
+  <h2>8. Gestão de Incidentes</h2>
+  <p>Incidentes de segurança são tratados conforme o <a href="pla-irsi-001.html">Plano de Resposta a Incidentes (PLA-IRSI-001)</a>. Todo colaborador deve reportar eventos suspeitos ao DPO/RSI imediatamente.</p>
+
+  <h2>9. Referências</h2>
+  <ul>
+    <li>ISO/IEC 27001:2022 e ISO/IEC 27002:2022</li>
+    <li>ISO/IEC 27701 (gestão de privacidade)</li>
+    <li>NIST Cybersecurity Framework (CSF)</li>
+    <li>CIS Controls v8</li>
+    <li>LGPD — Lei 13.709/2018</li>
+    <li>Res. CMN 4.893/2021 e Res. BCB 85/2021 (clientes financeiros)</li>
+  </ul>
+
+</div>
+
+<footer class="site-footer">
+  <p><strong>Lux Energia LTDA</strong> — DPO: Arthur Lobo — <a href="mailto:privacidade@luxenergia.com.br">privacidade@luxenergia.com.br</a></p>
+  <p style="margin-top:8px"><a href="index.html">← Voltar às Políticas</a> · <a href="https://www.luxenergia.com.br">luxenergia.com.br</a></p>
+</footer>
+
+</body>
+</html>

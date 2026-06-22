@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLA-IRSI-001 — Plano de Resposta a Incidentes — Lux Energia</title>
+  <link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="logo"><div class="logo-text"><span>Lux</span> Energia</div></div>
+  <a href="index.html" class="nav-back">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Políticas e Governança
+  </a>
+</nav>
+
+<div class="policy-hero">
+  <div class="container">
+    <div class="policy-breadcrumb">
+      <a href="index.html">Políticas</a> › <span>Segurança da Informação</span> › PLA-IRSI-001
+    </div>
+    <h1>Plano de Resposta a Incidentes de Segurança da Informação</h1>
+    <p class="subtitle">Processo formal de detecção, contenção, investigação, erradicação, recuperação e notificação — incluindo obrigações LGPD/ANPD.</p>
+  </div>
+</div>
+
+<div class="policy-meta-bar">
+  <div class="policy-meta-inner">
+    <div class="meta-item"><span class="meta-label">Código</span><span class="meta-value">PLA-IRSI-001</span></div>
+    <div class="meta-item"><span class="meta-label">Versão</span><span class="meta-value">1.1</span></div>
+    <div class="meta-item"><span class="meta-label">Última atualização</span><span class="meta-value">Junho de 2026</span></div>
+    <div class="meta-item"><span class="meta-label">Revisão</span><span class="meta-value">Anual + após incidente Crítico</span></div>
+    <div class="meta-item"><span class="meta-label">Dono</span><span class="meta-value">Responsável de SI + DPO</span></div>
+    <div class="meta-item"><span class="meta-label">Referências</span><span class="meta-value">NIST SP 800-61; ISO 27001 A.5.24–A.5.28; Res. ANPD 15/2024</span></div>
+  </div>
+</div>
+
+<div class="policy-content">
+
+  <h2>1. Objetivo</h2>
+  <p>Estabelecer o processo formal pelo qual a Lux detecta, contém, investiga, erradica, recupera e aprende com incidentes de segurança da informação — incluindo incidentes que envolvam dados pessoais (LGPD Art. 48).</p>
+
+  <h2>2. Definições</h2>
+  <table class="info-table">
+    <tr><th>Evento de SI</th><td>Ocorrência identificável potencialmente relacionada a segurança. Não necessariamente um problema.</td></tr>
+    <tr><th>Incidente de SI</th><td>Evento confirmado que comprometa confidencialidade, integridade ou disponibilidade.</td></tr>
+    <tr><th>Incidente com dados pessoais</th><td>Subcategoria que aciona obrigações adicionais da LGPD (Art. 48) e da Res. ANPD 15/2024.</td></tr>
+  </table>
+
+  <h2>3. Severidades e SLAs</h2>
+  <table class="info-table">
+    <tr><th>Crítico</th><td>Dados sensíveis expostos; produção inacessível &gt;1h; ransomware ativo; quebra de sigilo bancário. <strong>Resposta inicial: 15 min. Contenção: 2h. Comunicação a cliente regulado: ≤24h.</strong></td></tr>
+    <tr><th>Alto</th><td>Dados pessoais comuns expostos; serviço crítico degradado; tentativa confirmada de invasão. <strong>Resposta: 30 min. Contenção: 8h. Comunicação: ≤48h.</strong></td></tr>
+    <tr><th>Médio</th><td>Phishing bem-sucedido; conta comprometida sem privilégio elevado. <strong>Resposta: 2h. Contenção: 48h.</strong></td></tr>
+    <tr><th>Baixo</th><td>Tentativa de phishing bloqueada; alerta sem exploração. <strong>Resposta: próximo dia útil. Contenção: 5 dias úteis.</strong></td></tr>
+  </table>
+
+  <div class="notice-box"><strong>Notificação à ANPD e a titulares</strong> (incidente com dado pessoal): até 3 dias úteis quando houver risco/dano relevante — Res. ANPD 15/2024.</div>
+
+  <h2>4. Ciclo de Vida (NIST SP 800-61)</h2>
+  <ol>
+    <li><strong>Preparação</strong> — plano atualizado, equipe treinada, ferramentas configuradas;</li>
+    <li><strong>Detecção e Análise</strong> — identificação, classificação de severidade, acionamento da equipe;</li>
+    <li><strong>Contenção</strong> — isolamento do sistema afetado, preservação de evidências;</li>
+    <li><strong>Erradicação</strong> — remoção da causa raiz, correção de vulnerabilidade;</li>
+    <li><strong>Recuperação</strong> — restauração do serviço, monitoramento reforçado;</li>
+    <li><strong>Pós-Incidente</strong> — lições aprendidas, atualização do plano, comunicações finais.</li>
+  </ol>
+
+  <h2>5. Notificação de Incidentes</h2>
+  <p>Qualquer colaborador que identifique um evento suspeito deve reportar imediatamente ao Responsável de SI e ao DPO pelo e-mail <a href="mailto:privacidade@luxenergia.com.br">privacidade@luxenergia.com.br</a> ou pelo canal interno de segurança.</p>
+  <p>Clientes que identificarem comportamentos suspeitos em produtos Lux devem acionar o canal de suporte ou o DPO diretamente.</p>
+
+</div>
+
+<footer class="site-footer">
+  <p><strong>Lux Energia LTDA</strong> — DPO: Arthur Lobo — <a href="mailto:privacidade@luxenergia.com.br">privacidade@luxenergia.com.br</a></p>
+  <p style="margin-top:8px"><a href="index.html">← Voltar às Políticas</a> · <a href="https://www.luxenergia.com.br">luxenergia.com.br</a></p>
+</footer>
+
+</body>
+</html>

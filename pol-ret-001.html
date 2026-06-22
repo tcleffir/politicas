@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POL-RET-001 — Retenção e Eliminação de Dados — Lux Energia</title>
+  <link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="logo"><div class="logo-text"><span>Lux</span> Energia</div></div>
+  <a href="index.html" class="nav-back">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Políticas e Governança
+  </a>
+</nav>
+
+<div class="policy-hero">
+  <div class="container">
+    <div class="policy-breadcrumb">
+      <a href="index.html">Políticas</a> › <span>Privacidade &amp; Proteção de Dados</span> › POL-RET-001
+    </div>
+    <h1>Política de Retenção e Eliminação de Dados</h1>
+    <p class="subtitle">Prazos máximos de retenção e eliminação certificada para cada categoria de dado tratado pela Lux Energia.</p>
+  </div>
+</div>
+
+<div class="policy-meta-bar">
+  <div class="policy-meta-inner">
+    <div class="meta-item"><span class="meta-label">Código</span><span class="meta-value">POL-RET-001</span></div>
+    <div class="meta-item"><span class="meta-label">Versão</span><span class="meta-value">1.0</span></div>
+    <div class="meta-item"><span class="meta-label">Última atualização</span><span class="meta-value">Junho de 2026</span></div>
+    <div class="meta-item"><span class="meta-label">Revisão</span><span class="meta-value">Anual</span></div>
+    <div class="meta-item"><span class="meta-label">Dono</span><span class="meta-value">DPO + Responsável de SI</span></div>
+    <div class="meta-item"><span class="meta-label">Política-mãe</span><span class="meta-value">POL-PRIV-001</span></div>
+  </div>
+</div>
+
+<div class="policy-content">
+
+  <h2>1. Objetivo</h2>
+  <p>Estabelecer prazos máximos de retenção dos dados pessoais e demais informações tratadas pela Lux, com eliminação automatizada ao fim do prazo, em conformidade com LGPD, normas setoriais e contratos com clientes.</p>
+
+  <h2>2. Princípios</h2>
+  <ul>
+    <li><strong>Retenção limitada à necessidade</strong> — LGPD Art. 6º, III;</li>
+    <li><strong>Eliminação ao fim do prazo</strong> — LGPD Art. 16;</li>
+    <li><strong>Prazos justificados em base legal</strong> — não há retenção indefinida;</li>
+    <li><strong>Automação preferencial</strong> — script/job apaga automaticamente quando possível;</li>
+    <li><strong>Cliente regulado decide prazos contratuais</strong> — Lux honra;</li>
+    <li><strong>Retenção residual transparente</strong> — quando lei manda reter, declaramos.</li>
+  </ul>
+
+  <h2>3. Tabela de Retenção — Dados Pessoais (LGPD)</h2>
+  <table class="info-table">
+    <tr><th>Categoria</th><td><strong>Prazo</strong></td></tr>
+    <tr><th>Colaboradores ativos</th><td>Enquanto vínculo + 5 anos após desligamento (mín.) — CLT, INSS</td></tr>
+    <tr><th>Folha de pagamento</th><td>5 anos — CLT, FGTS</td></tr>
+    <tr><th>Candidatos não aprovados</th><td>6 meses (descarte automático)</td></tr>
+    <tr><th>Leads não convertidos</th><td>12 meses</td></tr>
+    <tr><th>Clientes diretos</th><td>Enquanto vínculo + 5 anos — prazo civil</td></tr>
+    <tr><th>Contatos do site (formulário)</th><td>12 meses ou até revogação do consentimento</td></tr>
+    <tr><th>Marketing (newsletter)</th><td>Até consentimento revogado</td></tr>
+    <tr><th>Dados sensíveis (saúde admissional)</th><td>Mínimo legal aplicável (saúde ocupacional: 20 anos — NR-7)</td></tr>
+    <tr><th>Dados de cookies analytics</th><td>12 meses (consentimento + anonimização gradual)</td></tr>
+  </table>
+
+  <h2>4. Dados de Operação (Lux como Operadora)</h2>
+  <table class="info-table">
+    <tr><th>Categoria</th><td><strong>Prazo</strong></td></tr>
+    <tr><th>Dados de usuários (clientes regulados)</th><td>Enquanto contrato vigorar — prazo definido em DPA</td></tr>
+    <tr><th>Logs de auditoria (cliente financeiro)</th><td>Mínimo 5 anos — LC 105/2001 + normas BCB</td></tr>
+    <tr><th>Logs operacionais (debug, telemetria)</th><td>6–12 meses</td></tr>
+    <tr><th>Backups de cliente</th><td>Conforme contrato — geralmente 30–90 dias rolling</td></tr>
+  </table>
+
+  <h2>5. Processo de Eliminação</h2>
+  <p>Ao término do prazo:</p>
+  <ul>
+    <li>Dados em sistemas produtivos: <strong>wipe lógico</strong> com log de confirmação;</li>
+    <li>Backups: <strong>expurgo automatizado</strong> em até 90 dias após o prazo de retenção;</li>
+    <li>Dados físicos: destruição com certificado;</li>
+    <li>Dados de clientes ao fim do contrato: conforme <a href="pla-exit-001.html">PLA-EXIT-001 — Plano de Saída</a>, com declaração assinada.</li>
+  </ul>
+
+  <h2>6. Referências</h2>
+  <ul>
+    <li>LGPD Arts. 15 e 16</li>
+    <li>LC 105/2001 (sigilo bancário — 5 anos)</li>
+    <li>CTN (5 anos — obrigações tributárias)</li>
+    <li>CLT (até 10 anos — obrigações trabalhistas)</li>
+    <li>ISO/IEC 27001:2022 A.5.10, A.5.33</li>
+  </ul>
+
+</div>
+
+<footer class="site-footer">
+  <p><strong>Lux Energia LTDA</strong> — DPO: Arthur Lobo — <a href="mailto:privacidade@luxenergia.com.br">privacidade@luxenergia.com.br</a></p>
+  <p style="margin-top:8px"><a href="index.html">← Voltar às Políticas</a> · <a href="https://www.luxenergia.com.br">luxenergia.com.br</a></p>
+</footer>
+
+</body>
+</html>

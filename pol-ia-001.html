@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POL-IA-001 — Política de Uso de IA — Lux Energia</title>
+  <link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="logo"><div class="logo-text"><span>Lux</span> Energia</div></div>
+  <a href="index.html" class="nav-back">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Políticas e Governança
+  </a>
+</nav>
+
+<div class="policy-hero">
+  <div class="container">
+    <div class="policy-breadcrumb">
+      <a href="index.html">Políticas</a> › <span>Segurança da Informação</span> › POL-IA-001
+    </div>
+    <h1>Política de Uso de Inteligência Artificial</h1>
+    <p class="subtitle">Regras para uso responsável, seguro e em conformidade de IA generativa (IAGEN) e demais formas de IA pela Lux Energia.</p>
+  </div>
+</div>
+
+<div class="policy-meta-bar">
+  <div class="policy-meta-inner">
+    <div class="meta-item"><span class="meta-label">Código</span><span class="meta-value">POL-IA-001</span></div>
+    <div class="meta-item"><span class="meta-label">Versão</span><span class="meta-value">1.1</span></div>
+    <div class="meta-item"><span class="meta-label">Última atualização</span><span class="meta-value">Junho de 2026</span></div>
+    <div class="meta-item"><span class="meta-label">Revisão</span><span class="meta-value">Semestral</span></div>
+    <div class="meta-item"><span class="meta-label">Dono</span><span class="meta-value">DPO + RSI + Engenharia</span></div>
+    <div class="meta-item"><span class="meta-label">Referências</span><span class="meta-value">EU AI Act; PL 2338/2023; NIST AI RMF; OWASP LLM Top 10</span></div>
+  </div>
+</div>
+
+<div class="policy-content">
+
+  <h2>1. Objetivo</h2>
+  <p>Estabelecer regras para uso responsável, seguro e em conformidade de <strong>Inteligência Artificial Generativa (IAGEN)</strong> e demais formas de IA pela Lux Energia — protegendo dados de clientes, evitando vazamento, garantindo <em>human-in-the-loop</em> em decisões críticas e atendendo a exigências regulatórias e contratuais.</p>
+
+  <h2>2. Escopo</h2>
+  <ul>
+    <li><strong>IA generativa interna</strong> — uso de LLM por colaboradores para tarefas profissionais;</li>
+    <li><strong>IA embarcada em produto</strong> — funcionalidades de IA dentro dos produtos Lux;</li>
+    <li><strong>IA exposta a usuário final</strong> — assistentes e chatbots ofertados a clientes;</li>
+    <li><strong>Modelos de IA terceirizados</strong> — qualquer LLM/serviço consumido pela Lux.</li>
+  </ul>
+
+  <h2>3. Provedor de IA Homologado</h2>
+  <p>Padrão-alvo Lux: <strong>Azure AI Foundry</strong> (provável Anthropic Claude), região Brazil South.</p>
+  <table class="info-table">
+    <tr><th>Coerência com stack</th><td>Mesma cloud (Azure) — segurança e identidade integradas</td></tr>
+    <tr><th>Residência de dados</th><td>Brazil South — conformidade com LGPD</td></tr>
+    <tr><th>Privacidade</th><td>Provedor não usa prompts para treinar modelos públicos (cláusula contratual)</td></tr>
+    <tr><th>Auditoria</th><td>Logs no Microsoft Sentinel via Diagnostic Settings</td></tr>
+  </table>
+  <div class="notice-box">Uso de provedores não homologados (ChatGPT direto, Gemini, LLMs externos) é <strong>vedado</strong> com dados classificados como Interna+ em contexto corporativo.</div>
+
+  <h2>4. Princípios de IA Responsável</h2>
+  <ul>
+    <li><strong>Privacy by design</strong> — dados pessoais não saem da Lux sem necessidade;</li>
+    <li><strong>Human-in-the-loop</strong> — decisões críticas têm revisão humana antes de execução;</li>
+    <li><strong>Transparência</strong> — usuário sabe quando está interagindo com IA;</li>
+    <li><strong>Não discriminação</strong> — monitoramento de viés em outputs;</li>
+    <li><strong>Explicabilidade</strong> — decisões automatizadas são auditáveis;</li>
+    <li><strong>Segurança</strong> — proteção contra ataques de prompt injection e jailbreak.</li>
+  </ul>
+
+  <h2>5. O que é Permitido</h2>
+  <ul>
+    <li>Uso do provedor homologado com dados Internos ou Públicos;</li>
+    <li>Geração de código, análise de documentos, redação profissional;</li>
+    <li>Automação de tarefas repetitivas com supervisão humana;</li>
+    <li>Prototipagem e pesquisa com dados anonimizados.</li>
+  </ul>
+
+  <h2>6. O que é Vedado</h2>
+  <ul>
+    <li>Inserir dados classificados como Confidencial ou Restrito em LLM não homologado;</li>
+    <li>Inserir dados pessoais de clientes em IA sem base legal e DPA firmado com o provedor;</li>
+    <li>Usar IA para decisões automatizadas que afetem direitos de titulares sem revisão humana;</li>
+    <li>Apresentar output de IA como fato sem verificação;</li>
+    <li>Usar IA para gerar conteúdo que viole direitos autorais, privacidade ou lei.</li>
+  </ul>
+
+  <h2>7. Governança e Responsabilidades</h2>
+  <p>O DPO + Responsável de SI + Líder de Engenharia são co-donos desta política. Incidentes relacionados a IA (vazamento via prompt, output inadequado, uso não autorizado) são tratados conforme <a href="pla-irsi-001.html">PLA-IRSI-001</a>.</p>
+
+</div>
+
+<footer class="site-footer">
+  <p><strong>Lux Energia LTDA</strong> — DPO: Arthur Lobo — <a href="mailto:privacidade@luxenergia.com.br">privacidade@luxenergia.com.br</a></p>
+  <p style="margin-top:8px"><a href="index.html">← Voltar às Políticas</a> · <a href="https://www.luxenergia.com.br">luxenergia.com.br</a></p>
+</footer>
+
+</body>
+</html>

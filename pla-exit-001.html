@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLA-EXIT-001 — Plano de Saída e Portabilidade — Lux Energia</title>
+  <link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="logo"><div class="logo-text"><span>Lux</span> Energia</div></div>
+  <a href="index.html" class="nav-back">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Políticas e Governança
+  </a>
+</nav>
+
+<div class="policy-hero">
+  <div class="container">
+    <div class="policy-breadcrumb">
+      <a href="index.html">Políticas</a> › <span>Segurança da Informação</span> › PLA-EXIT-001
+    </div>
+    <h1>Plano de Saída e Portabilidade de Dados</h1>
+    <p class="subtitle">Portabilidade integral dos dados e eliminação certificada ao fim do contrato — sem lock-in tecnológico ou contratual.</p>
+  </div>
+</div>
+
+<div class="policy-meta-bar">
+  <div class="policy-meta-inner">
+    <div class="meta-item"><span class="meta-label">Código</span><span class="meta-value">PLA-EXIT-001</span></div>
+    <div class="meta-item"><span class="meta-label">Versão</span><span class="meta-value">1.1</span></div>
+    <div class="meta-item"><span class="meta-label">Última atualização</span><span class="meta-value">Junho de 2026</span></div>
+    <div class="meta-item"><span class="meta-label">Revisão</span><span class="meta-value">Anual + novo contrato significativo</span></div>
+    <div class="meta-item"><span class="meta-label">Dono</span><span class="meta-value">DPO + Comercial + Engenharia</span></div>
+    <div class="meta-item"><span class="meta-label">Referências</span><span class="meta-value">LGPD Arts. 16, 18; ISO 27001 A.5.20</span></div>
+  </div>
+</div>
+
+<div class="policy-content">
+
+  <h2>1. Objetivo</h2>
+  <p>Garantir ao cliente Controlador <strong>portabilidade integral dos dados e eliminação certificada</strong> ao fim do contrato, sem lock-in tecnológico ou contratual — em formato aberto, em prazo razoável e com canal seguro.</p>
+
+  <h2>2. Princípios</h2>
+  <ul>
+    <li><strong>Sem lock-in</strong> — dados entregues em formato aberto e padronizado (CSV/JSON/SQL dump);</li>
+    <li><strong>Portabilidade ampla</strong> — tudo que foi recebido + tudo que foi gerado em decorrência do tratamento;</li>
+    <li><strong>Janela de transição</strong> documentada no contrato;</li>
+    <li><strong>Descarte certificado</strong> após a entrega — declaração assinada pela Lux;</li>
+    <li><strong>Cooperação técnica</strong> com o sucessor designado pelo cliente (sem cobranças abusivas).</li>
+  </ul>
+
+  <h2>3. O que é Portado</h2>
+  <table class="info-table">
+    <tr><th>Identificação de usuários</th><td>CSV (id, nome, e-mail, matrícula, perfis, status, datas)</td></tr>
+    <tr><th>Configurações de tenant</th><td>JSON estruturado (perfis, regras, integrações)</td></tr>
+    <tr><th>Logs de auditoria</th><td>JSON Lines (JSONL) ou CSV</td></tr>
+    <tr><th>Dados de aplicação</th><td>CSV ou JSON + esquema documentado</td></tr>
+    <tr><th>Arquivos e anexos</th><td>Originais + manifesto com hashes</td></tr>
+    <tr><th>Documentação contratual</th><td>PDF (DPA, contrato, atas, comunicações relevantes)</td></tr>
+  </table>
+  <div class="notice-box">Não inclui: dados de outros clientes, dados internos da Lux (RH, financeiro) e código-fonte da plataforma.</div>
+
+  <h2>4. Gatilhos para Acionamento</h2>
+  <table class="info-table">
+    <tr><th>Notificação de encerramento contratual</th><td>Imediato</td></tr>
+    <tr><th>Vencimento sem renovação</th><td>A partir de D-90 do vencimento</td></tr>
+    <tr><th>Rescisão antecipada</th><td>Imediato</td></tr>
+    <tr><th>Mudança de fornecedor solicitada</th><td>A partir de D-60 da data alvo</td></tr>
+  </table>
+
+  <h2>5. Fluxo do Plano de Saída</h2>
+  <ol>
+    <li><strong>Acionamento</strong> — confirmação de encerramento, designação do gestor do processo;</li>
+    <li><strong>Planejamento</strong> — inventário de dados, formatos, cronograma, contato técnico do sucessor;</li>
+    <li><strong>Exportação</strong> — extração técnica nos formatos acordados, verificação de completude;</li>
+    <li><strong>Entrega</strong> — transferência segura (canal criptografado), confirmação de recebimento;</li>
+    <li><strong>Verificação</strong> — cliente confirma integridade dos dados;</li>
+    <li><strong>Descarte</strong> — eliminação certificada dos dados da Lux, emissão de declaração assinada.</li>
+  </ol>
+
+</div>
+
+<footer class="site-footer">
+  <p><strong>Lux Energia LTDA</strong> — DPO: Arthur Lobo — <a href="mailto:privacidade@luxenergia.com.br">privacidade@luxenergia.com.br</a></p>
+  <p style="margin-top:8px"><a href="index.html">← Voltar às Políticas</a> · <a href="https://www.luxenergia.com.br">luxenergia.com.br</a></p>
+</footer>
+
+</body>
+</html>
