@@ -3,295 +3,377 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Políticas e Governança — Lux Energia</title>
+  <title>Políticas & Governança — Lux Energia</title>
+  <meta name="description" content="Central de políticas, segurança e privacidade da Lux Energia. Transparência total com nossos clientes e titulares de dados.">
   <link rel="stylesheet" href="_shared.css">
-  <style>
-    .stats-bar {
-      background: var(--bg-light);
-      border-bottom: 1px solid var(--border);
-      padding: 20px 40px;
-    }
-    .stats-inner {
-      max-width: 1160px;
-      margin: 0 auto;
-      display: flex;
-      gap: 40px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .stat { text-align: center; }
-    .stat-num { font-size: 1.6rem; font-weight: 800; color: var(--primary); }
-    .stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
-    .stat-divider { width: 1px; height: 40px; background: var(--border); }
-    .lgpd-banner {
-      background: var(--accent-light);
-      border-top: 3px solid var(--accent);
-      padding: 16px 40px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 0.875rem;
-    }
-    .lgpd-banner strong { color: var(--primary); }
-    .lgpd-banner a { color: var(--accent); font-weight: 600; }
-  </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav class="site-nav">
-  <div class="logo">
-    <div class="logo-text"><span>Lux</span> Energia</div>
-  </div>
-  <a href="https://www.luxenergia.com.br" class="nav-back">
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    Voltar ao site
+  <a href="https://www.luxenergia.com.br" class="nav-logo">
+    <div class="nav-logo-mark">LX</div>
+    <span class="nav-logo-text"><span>Lux</span> Energia</span>
   </a>
+  <div class="nav-right">
+    <a href="https://www.luxenergia.com.br" class="nav-back">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 11L5 7l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Voltar ao site
+    </a>
+    <a href="mailto:privacidade@luxenergia.com.br" class="nav-cta">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 3.5L12 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><rect x="1" y="3" width="12" height="8" rx="1.5" stroke="currentColor" stroke-width="1.3"/></svg>
+      Fale com a Lux
+    </a>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-badge">
-    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1L7.5 4.5H11L8.5 6.5l1 3.5L6 8 2.5 10l1-3.5L1 4.5h3.5L6 1z" fill="currentColor"/></svg>
-    Transparência &amp; Conformidade
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M5 0L6.12 3.38H9.51L6.76 5.49L7.88 8.88L5 6.76L2.12 8.88L3.24 5.49L0.49 3.38H3.88L5 0Z"/></svg>
+      Central de Transparência
+    </div>
+    <h1>Políticas &amp; <em>Governança</em></h1>
+    <p class="hero-sub">Documentamos nossos compromissos com privacidade, segurança e ética. Tudo público, tudo rastreável.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num">14</span>
+        <span class="hero-stat-label">Documentos</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">LGPD</span>
+        <span class="hero-stat-label">Lei 13.709/2018</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">ISO 27001</span>
+        <span class="hero-stat-label">Segurança</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">Jun/2026</span>
+        <span class="hero-stat-label">Última revisão</span>
+      </div>
+    </div>
   </div>
-  <h1>Políticas e Governança</h1>
-  <p>Documentamos nossos compromissos com segurança, privacidade e ética. Acesse cada política na íntegra.</p>
 </section>
 
-<!-- STATS -->
-<div class="stats-bar">
-  <div class="stats-inner">
-    <div class="stat">
-      <div class="stat-num">14</div>
-      <div class="stat-label">Documentos publicados</div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <div class="stat-num">LGPD</div>
-      <div class="stat-label">Conformidade Lei 13.709/2018</div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <div class="stat-num">ISO 27001</div>
-      <div class="stat-label">Referência de segurança</div>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <div class="stat-num">v1.0</div>
-      <div class="stat-label">Versão atual — Jun/2026</div>
-    </div>
+<!-- FILTER TABS -->
+<div class="filter-bar">
+  <div class="filter-tabs">
+    <button class="filter-tab active" data-filter="all">Todas as políticas <span style="color:var(--text-light);font-weight:400">(14)</span></button>
+    <button class="filter-tab" data-filter="privacy">Privacidade &amp; Dados <span style="color:var(--text-light);font-weight:400">(6)</span></button>
+    <button class="filter-tab" data-filter="security">Segurança da Informação <span style="color:var(--text-light);font-weight:400">(5)</span></button>
+    <button class="filter-tab" data-filter="gov">Governança Corporativa <span style="color:var(--text-light);font-weight:400">(3)</span></button>
   </div>
 </div>
 
 <!-- LGPD BANNER -->
 <div class="lgpd-banner">
-  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" stroke="#00B484" stroke-width="1.5"/><path d="M9 8v5M9 6h.01" stroke="#00B484" stroke-width="1.5" stroke-linecap="round"/></svg>
-  <span><strong>Canal do Titular de Dados:</strong> Para exercer seus direitos pela LGPD, escreva para <a href="mailto:privacidade@luxenergia.com.br">privacidade@luxenergia.com.br</a> — respondemos em até 15 dias corridos.</span>
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#00B484" stroke-width="1.3"/><path d="M8 7v4M8 5.5h.01" stroke="#00B484" stroke-width="1.3" stroke-linecap="round"/></svg>
+  <span><strong>Titular de dados?</strong> Exerça seus direitos pela LGPD em <a href="mailto:privacidade@luxenergia.com.br">privacidade@luxenergia.com.br</a> — resposta em até 15 dias corridos.</span>
 </div>
 
-<!-- CONTEÚDO -->
+<!-- CONTENT -->
 <div class="container">
 
-  <!-- CATEGORIA 1: PRIVACIDADE -->
-  <section class="category-section">
-    <div class="category-header">
-      <div class="category-icon privacy">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 6v6c0 5.5 3.5 10.7 8 12 4.5-1.3 8-6.5 8-12V6l-8-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+  <!-- PRIVACIDADE -->
+  <section class="cat-group" data-category="privacy">
+    <div class="cat-label">
+      <div class="cat-pill privacy">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1L2 3v4c0 2.8 1.8 5.4 4 6.1C8.2 12.4 10 9.8 10 7V3L6 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        Privacidade &amp; Proteção de Dados
       </div>
-      <div>
-        <div class="category-title">Privacidade &amp; Proteção de Dados</div>
-        <div class="category-desc">Documentos relacionados ao tratamento, retenção e direitos sobre dados pessoais — LGPD</div>
-      </div>
+      <span class="cat-count">6 documentos</span>
     </div>
-
     <div class="cards-grid">
 
-      <a href="pol-priv-001.html" class="policy-card">
-        <div class="card-code">POL-PRIV-001</div>
-        <div class="card-title">Política de Privacidade e Proteção de Dados Pessoais</div>
-        <div class="card-desc">Princípios, papéis e regras gerais que orientam o tratamento de dados pessoais pela Lux, como Controladora e Operadora.</div>
+      <a href="pol-priv-001.html" class="policy-card" data-cat="privacy">
+        <div class="card-accent privacy"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">POL-PRIV-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 6 min</span>
+          </div>
+          <div class="card-title">Política de Privacidade e Proteção de Dados Pessoais</div>
+          <div class="card-desc">Princípios, papéis e regras gerais que orientam o tratamento de dados pessoais pela Lux como Controladora e Operadora.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.0 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
-      <a href="evi-dpo-001.html" class="policy-card">
-        <div class="card-code">EVI-DPO-001</div>
-        <div class="card-title">Encarregado de Dados (DPO)</div>
-        <div class="card-desc">Identidade pública e canais de contato do Encarregado pelo Tratamento de Dados, conforme LGPD Art. 41.</div>
+      <a href="evi-dpo-001.html" class="policy-card" data-cat="privacy">
+        <div class="card-accent privacy"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">EVI-DPO-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 4 min</span>
+          </div>
+          <div class="card-title">Encarregado de Dados (DPO)</div>
+          <div class="card-desc">Identidade pública e canais de contato do DPO da Lux Energia, conforme obrigação da LGPD Art. 41.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.0 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
-      <a href="sop-tit-001.html" class="policy-card">
-        <div class="card-code">SOP-TIT-001</div>
-        <div class="card-title">Atendimento ao Titular de Dados</div>
-        <div class="card-desc">Procedimento para exercício dos direitos do titular (LGPD Art. 18): acesso, correção, portabilidade, eliminação e outros.</div>
+      <a href="sop-tit-001.html" class="policy-card" data-cat="privacy">
+        <div class="card-accent privacy"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">SOP-TIT-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 5 min</span>
+          </div>
+          <div class="card-title">Atendimento ao Titular de Dados</div>
+          <div class="card-desc">Como exercer seus 9 direitos pela LGPD Art. 18 — acesso, correção, portabilidade, eliminação e mais. Resposta em 15 dias.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.0 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
-      <a href="pol-ret-001.html" class="policy-card">
-        <div class="card-code">POL-RET-001</div>
-        <div class="card-title">Política de Retenção e Eliminação de Dados</div>
-        <div class="card-desc">Prazos máximos de retenção e processos de eliminação certificada para cada categoria de dado tratado pela Lux.</div>
+      <a href="pol-ret-001.html" class="policy-card" data-cat="privacy">
+        <div class="card-accent privacy"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">POL-RET-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 4 min</span>
+          </div>
+          <div class="card-title">Política de Retenção e Eliminação de Dados</div>
+          <div class="card-desc">Prazos máximos por categoria de dado e processo de eliminação certificada — LGPD Arts. 15 e 16.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.0 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
-      <a href="sop-dpa-001.html" class="policy-card">
-        <div class="card-code">SOP-DPA-001</div>
-        <div class="card-title">Contratação de Sub-Operadores e DPA</div>
-        <div class="card-desc">Procedimento de due diligence e assinatura de Data Processing Agreement para fornecedores com acesso a dados.</div>
+      <a href="sop-dpa-001.html" class="policy-card" data-cat="privacy">
+        <div class="card-accent privacy"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">SOP-DPA-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 4 min</span>
+          </div>
+          <div class="card-title">Contratação de Sub-Operadores e DPA</div>
+          <div class="card-desc">Due diligence de privacidade e assinatura de Data Processing Agreement para fornecedores com acesso a dados.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.0 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
-      <a href="inv-rat-001.html" class="policy-card">
-        <div class="card-code">INV-RAT-001</div>
-        <div class="card-title">Registro de Atividades de Tratamento (RAT/ROPA)</div>
-        <div class="card-desc">Inventário centralizado de todas as operações de tratamento de dados, cumprindo LGPD Art. 37 como Controladora e Operadora.</div>
+      <a href="inv-rat-001.html" class="policy-card" data-cat="privacy">
+        <div class="card-accent privacy"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">INV-RAT-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 3 min</span>
+          </div>
+          <div class="card-title">Registro de Atividades de Tratamento (RAT/ROPA)</div>
+          <div class="card-desc">Inventário centralizado de todas as operações de tratamento de dados — obrigação LGPD Art. 37.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.0 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
     </div>
   </section>
 
-  <!-- CATEGORIA 2: SEGURANÇA -->
-  <section class="category-section">
-    <div class="category-header">
-      <div class="category-icon security">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <!-- SEGURANÇA -->
+  <section class="cat-group" data-category="security">
+    <div class="cat-label">
+      <div class="cat-pill security">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><rect x="2" y="5.5" width="8" height="5.5" rx="1" stroke="currentColor" stroke-width="1.2"/><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        Segurança da Informação
       </div>
-      <div>
-        <div class="category-title">Segurança da Informação</div>
-        <div class="category-desc">Políticas e planos que protegem a confidencialidade, integridade e disponibilidade das informações</div>
-      </div>
+      <span class="cat-count">5 documentos</span>
     </div>
-
     <div class="cards-grid">
 
-      <a href="pol-si-001.html" class="policy-card">
-        <div class="card-code">POL-SI-001</div>
-        <div class="card-title">Política de Segurança da Informação (PSI)</div>
-        <div class="card-desc">Documento-mãe do SGSI da Lux. Estabelece princípios CIA, papéis e regras gerais de segurança para toda a empresa.</div>
+      <a href="pol-si-001.html" class="policy-card" data-cat="security">
+        <div class="card-accent security"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">POL-SI-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 5 min</span>
+          </div>
+          <div class="card-title">Política de Segurança da Informação (PSI)</div>
+          <div class="card-desc">Documento-mãe do SGSI. Princípios CIA, classificação da informação e controles técnicos essenciais — ISO 27001.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.1 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
-      <a href="pol-ia-001.html" class="policy-card">
-        <div class="card-code">POL-IA-001</div>
-        <div class="card-title">Política de Uso de Inteligência Artificial</div>
-        <div class="card-desc">Regras para uso responsável de IA generativa e IAGEN — proteção de dados de clientes, human-in-the-loop e conformidade regulatória.</div>
+      <a href="pol-ia-001.html" class="policy-card" data-cat="security">
+        <div class="card-accent security"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">POL-IA-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 5 min</span>
+          </div>
+          <div class="card-title">Política de Uso de Inteligência Artificial</div>
+          <div class="card-desc">IA responsável, human-in-the-loop e proteção de dados de clientes. Provedor homologado e vedações explícitas.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.1 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
-      <a href="pla-irsi-001.html" class="policy-card">
-        <div class="card-code">PLA-IRSI-001</div>
-        <div class="card-title">Plano de Resposta a Incidentes de Segurança</div>
-        <div class="card-desc">Processo estruturado de detecção, contenção, investigação, erradicação e recuperação de incidentes — incluindo notificação LGPD/ANPD.</div>
+      <a href="pla-irsi-001.html" class="policy-card" data-cat="security">
+        <div class="card-accent security"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">PLA-IRSI-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 4 min</span>
+          </div>
+          <div class="card-title">Plano de Resposta a Incidentes de Segurança</div>
+          <div class="card-desc">Detecção, contenção e recuperação de incidentes com SLAs por severidade e notificação à ANPD — NIST SP 800-61.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.1 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
-      <a href="pla-exit-001.html" class="policy-card">
-        <div class="card-code">PLA-EXIT-001</div>
-        <div class="card-title">Plano de Saída e Portabilidade de Dados</div>
-        <div class="card-desc">Garante ao cliente portabilidade integral dos dados e eliminação certificada ao fim do contrato, sem lock-in tecnológico ou contratual.</div>
+      <a href="pla-exit-001.html" class="policy-card" data-cat="security">
+        <div class="card-accent security"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">PLA-EXIT-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 4 min</span>
+          </div>
+          <div class="card-title">Plano de Saída e Portabilidade de Dados</div>
+          <div class="card-desc">Portabilidade integral em formatos abertos e descarte certificado ao fim do contrato. Zero lock-in.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.1 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
-      <a href="pol-log-001.html" class="policy-card">
-        <div class="card-code">POL-LOG-001</div>
-        <div class="card-title">Política de Logs e Auditoria</div>
-        <div class="card-desc">Rastreabilidade auditável de todas as ações nos sistemas da Lux, com logs estruturados, centralizados e retidos conforme exigências legais.</div>
+      <a href="pol-log-001.html" class="policy-card" data-cat="security">
+        <div class="card-accent security"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">POL-LOG-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 4 min</span>
+          </div>
+          <div class="card-title">Política de Logs e Auditoria</div>
+          <div class="card-desc">Rastreabilidade auditável via SIEM centralizado. Logs imutáveis, retidos ≥5 anos para clientes regulados.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.1 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
     </div>
   </section>
 
-  <!-- CATEGORIA 3: GOVERNANÇA -->
-  <section class="category-section">
-    <div class="category-header">
-      <div class="category-icon governance">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <!-- GOVERNANÇA -->
+  <section class="cat-group" data-category="gov">
+    <div class="cat-label">
+      <div class="cat-pill gov">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10V5M6 10V2M10 10V7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        Governança Corporativa
       </div>
-      <div>
-        <div class="category-title">Governança Corporativa</div>
-        <div class="category-desc">Estrutura de papéis, responsabilidades e compromissos éticos que sustentam a operação da Lux</div>
-      </div>
+      <span class="cat-count">3 documentos</span>
     </div>
-
     <div class="cards-grid">
 
-      <a href="gov-pap-001.html" class="policy-card">
-        <div class="card-code">GOV-PAP-001</div>
-        <div class="card-title">Matriz de Papéis e Responsáveis</div>
-        <div class="card-desc">Registro de todos os papéis mencionados nas políticas da Lux, com titular, suplente e escopo de responsabilidade.</div>
+      <a href="gov-pap-001.html" class="policy-card" data-cat="gov">
+        <div class="card-accent gov"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">GOV-PAP-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 3 min</span>
+          </div>
+          <div class="card-title">Matriz de Papéis e Responsáveis</div>
+          <div class="card-desc">Todos os papéis de governança da Lux com titular, suplente e escopo — fonte da verdade para auditorias.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.0 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
-      <a href="mat-raci-001.html" class="policy-card">
-        <div class="card-code">MAT-RACI-001</div>
-        <div class="card-title">Matriz RACI — Responsabilidades Pós-Implementação</div>
-        <div class="card-desc">Quem é Responsável, Aprovador, Consultado e Informado em cada atividade operacional crítica dos produtos Lux.</div>
+      <a href="mat-raci-001.html" class="policy-card" data-cat="gov">
+        <div class="card-accent gov"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">MAT-RACI-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 3 min</span>
+          </div>
+          <div class="card-title">Matriz RACI — Responsabilidades Pós-Implementação</div>
+          <div class="card-desc">Quem executa, aprova, é consultado e informado em cada atividade operacional crítica dos produtos Lux.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.0 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
-      <a href="gov-nda-001.html" class="policy-card">
-        <div class="card-code">GOV-NDA-001</div>
-        <div class="card-title">Termos de Conduta, Ética e Sigilo</div>
-        <div class="card-desc">Gestão dos termos assinados por colaboradores, terceiros e parceiros — conduta, ética, confidencialidade e sigilo bancário/setorial.</div>
+      <a href="gov-nda-001.html" class="policy-card" data-cat="gov">
+        <div class="card-accent gov"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-code">GOV-NDA-001</span>
+            <span class="card-read-time"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><circle cx="5.5" cy="5.5" r="4.5" stroke="currentColor" stroke-width="1.1"/><path d="M5.5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg> 4 min</span>
+          </div>
+          <div class="card-title">Termos de Conduta, Ética e Sigilo</div>
+          <div class="card-desc">Gestão dos 9 termos assinados por colaboradores e parceiros — conduta, ética, NDA, sigilo bancário e setorial.</div>
+        </div>
         <div class="card-footer">
           <span class="card-version">v1.0 · Jun 2026</span>
-          <span class="card-link">Acessar <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="card-cta">Ver política <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 6.5h7M7 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
 
     </div>
   </section>
 
-</div>
+</div><!-- /container -->
 
 <!-- FOOTER -->
 <footer class="site-footer">
-  <p><strong>Lux Energia LTDA</strong> — CNPJ [a definir] — Encarregado de Dados (DPO): Arthur Lobo</p>
-  <p style="margin-top:8px">Para dúvidas sobre privacidade: <a href="mailto:privacidade@luxenergia.com.br">privacidade@luxenergia.com.br</a> · <a href="https://www.luxenergia.com.br">luxenergia.com.br</a></p>
-  <p style="margin-top:8px;font-size:0.75rem;opacity:0.6">Documentos na versão 1.0 — rascunho aprovado. Última atualização: junho de 2026.</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <strong>Lux Energia LTDA</strong> — DPO: Arthur Lobo · <a href="mailto:privacidade@luxenergia.com.br">privacidade@luxenergia.com.br</a><br>
+      <span style="opacity:.5;font-size:.75rem">Documentos v1.0 — rascunho aprovado · Junho 2026</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.luxenergia.com.br">Site Lux</a>
+      <a href="evi-dpo-001.html">Privacidade</a>
+      <a href="sop-tit-001.html">Seus Direitos</a>
+      <a href="mailto:privacidade@luxenergia.com.br">Contato</a>
+    </div>
+  </div>
 </footer>
 
+<script>
+  // Filter tabs
+  const tabs = document.querySelectorAll('.filter-tab');
+  const groups = document.querySelectorAll('.cat-group');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const f = tab.dataset.filter;
+      groups.forEach(g => {
+        g.style.display = (f === 'all' || g.dataset.category === f) ? '' : 'none';
+      });
+    });
+  });
+</script>
 </body>
 </html>
