@@ -149,10 +149,7 @@ img { display: block; max-width: 100%; }
 .hero-inner {
   position: relative;
   max-width: 1200px; margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
+  display: block;
 }
 .hero-left {}
 .hero-badge {
@@ -695,7 +692,6 @@ img { display: block; max-width: 100%; }
 @media (max-width: 900px) {
   .site-nav { padding: 0 20px; }
   .hero { padding: 48px 20px; }
-  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
   .hero-right { display: none; }
   .feature-strip { padding: 40px 20px; }
   .feature-grid { grid-template-columns: 1fr; }
